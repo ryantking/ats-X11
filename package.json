@@ -1,0 +1,22 @@
+{
+    "name": "atscntrb-rk-libx11",
+    "version": "1.0.0",
+    "description": "This package is for calling X11 functions in ATS",
+    "main": "N/A",
+    "scripts": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/RyanTKing/ats-X11.git"
+    },
+    "keywords": [
+        "ATS",
+        "X11",
+        "atscntrb-rk-libx11"
+    ],
+    "author": "Ryan King <hello@ryanking.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/RyanTKing/ats-X11/issues"
+    },
+    "homepage": "https://github.com/RyanTKing/ats-X11#readme"
+}
