@@ -14,6 +14,25 @@
 
 /* ***** ****** */
 
+typedef atstype_lint EventMask
+typedef atstype_int EventType
+
+/* ***** ****** */
+
+ATSinline()
+static atstype_bool atscntrb_X11_eq_EventType_EventType(EventType et1, EventType et2) {
+  return (et1 == et2) ? atsbool_true : atsbool_false;
+}
+
+/* ***** ****** */
+
+ATSinline()
+static EventMask atscntrb_X11_lor_EventMask_EventMask(EventMask em1, EventMask em2) {
+  return em1 | em2;
+}
+
+/* ***** ****** */
+
 #endif
 
 /* End of [X11.cats] */
