@@ -11,15 +11,15 @@ staload "./../SATS/Xlib.sats"
 (* ****** ****** *)
 
 implement main0() = () where {
-  fun init_display(display_name: stropt): Display_ptr1 = dpy where {
-    val dpy = XOpenDisplay(display_name)
-    val () = if iseqz(dpy) then (
-      fprintln!(stderr_ref, "Failed to open the display.");
-      exit(1)
-    )
-    val () = assertloc(isneqz(dpy))
-  }
-
-  val dpy = init_display(stropt_none())
+  val dpy = XOpenDisplay(stropt_none())
+  val () = if iseqz(dpy) then (
+    fprintln!(stderr_ref, "Failed to open the display.");
+    exit(1)
+  )
+  val () = assertloc(isneqz(dpy))
+  val bpx = XBlackPixel(dpy, 0)
+  val wpx = XWhitePixel(dpy, 0)
+  val () = println!("Black Pixel = ", bpx)
+  val () = println!("White Pixel = ", wpx)
   val () = XCloseDisplay(dpy)
 }
