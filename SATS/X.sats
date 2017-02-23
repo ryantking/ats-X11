@@ -7,17 +7,14 @@
 //
 (* ****** ****** *)
 
-#ifndef X11_X
-#define X11_X
+// #ifndef X11_X
+// #define X11_X
 
 (* ****** ****** *)
 
 %{#
 #include "./../CATS/X.cats"
 %}
-
-#define ATS_PACKNAME "ATSCNTRB.X11"
-#define ATS_EXTERN_PREFIX "atscntrb_X11_"
 
 (* ****** ****** *)
 
@@ -46,13 +43,13 @@ abst@ype KeyCode  = $extype"KeyCode"
 
 abst@ype Drawable = $extype"Drawable"
 
-symintr Drawable
+// symintr Drawable
 
-castfn Drawable_of_Window(w: Window): Drawable
-castfn Drawable_of_Pixmap(p: Pixmap): Drawable
+// castfn Drawable_of_Window(Window): Drawable
+// castfn Drawable_of_Pixmap(Pixmap): Drawable
 
-overload Drawable with Drawable_of_Window
-overload Drawable with Drawable_of_Pixmap
+// overload Drawable with Drawable_of_Window
+// overload Drawable with Drawable_of_Pixmap
 
 (* ****** ****** *)
 
@@ -617,8 +614,14 @@ macdef DirectColor = $extval(int, "DirectColor")
 macdef LSBFirst    = $extval(int, "LSBFirst")
 macdef MSBFirst    = $extval(int, "MSBFirst")
 
+(* Queueing *)
+
+macdef QueuedAlready = $extval(int, "QueuedAlready")
+macdef QueuedAlready = $extval(int, "QueuedAfterReading")
+macdef QueuedAfterFlush = $extval(int, "QueuedAfterFlush")
+
 (* ****** ****** *)
 
-#endif
+// #endif
 
 (* End of [X.sats] *)

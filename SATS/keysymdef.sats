@@ -7,6 +7,10 @@
 //
 (* ****** ****** *)
 
+staload "./X.sats"
+
+(* ****** ****** *)
+
 (* TTY Function Keys *)
 
 macdef XK_BackSpace   = $extval(KeySym, "XK_BackSpace")
