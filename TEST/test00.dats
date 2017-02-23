@@ -6,8 +6,7 @@
 
 staload "libats/libc/SATS/unistd.sats"
 
-staload "./../SATS/X.sats"
-staload "./../SATS/Xlib.sats"
+#include "./../staloadall.hats"
 
 (* ****** ****** *)
 
