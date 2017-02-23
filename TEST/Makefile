@@ -4,7 +4,7 @@
 
 ######
 
-PATSCC=${PATSHOME}/bin/patscc -DATS_MEMALLOC_LIBC
+PATSCC=${PATSHOME}/bin/patscc -DATS_MEMALLOC_LIBC -lX11
 PATSOPT=${PATSHOME}/bin/patsopt
 
 ######
