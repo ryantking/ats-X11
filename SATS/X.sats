@@ -7,9 +7,6 @@
 //
 (* ****** ****** *)
 
-// #ifndef X11_X
-// #define X11_X
-
 (* ****** ****** *)
 
 %{#
@@ -619,9 +616,5 @@ macdef MSBFirst    = $extval(int, "MSBFirst")
 macdef QueuedAlready = $extval(int, "QueuedAlready")
 macdef QueuedAlready = $extval(int, "QueuedAfterReading")
 macdef QueuedAfterFlush = $extval(int, "QueuedAfterFlush")
-
-(* ****** ****** *)
-
-// #endif
 
 (* End of [X.sats] *)

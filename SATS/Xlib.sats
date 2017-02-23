@@ -7,14 +7,9 @@
 //
 (* ****** ****** *)
 
-// #ifndef X11_XLIB
-// #define X11_XLIB
-
 %{#
 #include "./../CATS/Xlib.cats"
 %}
-
-#define ATS_STALOADFLAG 0
 
 #define ATS_PACKNAME "ATSCNTRB.X11"
 #define ATS_EXTERN_PREFIX "atscntrb_X11_"
@@ -338,9 +333,5 @@ fun XSetWindowBorderPixmap{l:agz}(!Display_ptr(l), Window, Pixmap): void = "mac#
 fun XSetWindowColormap{l:agz}(!Display_ptr(l), Window, Colormap): void = "mac#%"
 fun XDefineCursor{l:agz}(!Display_ptr(l), Window, Cursor): void = "mac#%"
 fun XUndefineCursor{l:agz}(!Display_ptr(l), Window): void = "mac#%"
-
-(* ****** ****** *)
-
-// #endif
 
 (* End of [Xlib.sats] *)

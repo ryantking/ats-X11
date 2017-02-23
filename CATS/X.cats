@@ -14,8 +14,8 @@
 
 /* ***** ****** */
 
-typedef atstype_lint EventMask
-typedef atstype_int EventType
+typedef atstype_lint EventMask;
+typedef atstype_int EventType;
 
 /* ***** ****** */
 
