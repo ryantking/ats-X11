@@ -268,11 +268,11 @@ fun XCreateSimpleWindow{ld:agz}(
   int, int,
   uint, uint,
   uint,
-  uint,
+  ulint,
   ulint
 ): Window = "mac#%"
 
-(* ****** ****** *)
+(* ***** ****** *)
 
 fun XDestroyWindow{l:agz}(!Display_ptr(l), Window): void = "mac#%"
 fun XDestroySubwindows{l:agz}(!Display_ptr(l), Window): void = "mac#%"
@@ -334,5 +334,7 @@ fun XSetWindowBorderPixmap{l:agz}(!Display_ptr(l), Window, Pixmap): void = "mac#
 fun XSetWindowColormap{l:agz}(!Display_ptr(l), Window, Colormap): void = "mac#%"
 fun XDefineCursor{l:agz}(!Display_ptr(l), Window, Cursor): void = "mac#%"
 fun XUndefineCursor{l:agz}(!Display_ptr(l), Window): void = "mac#%"
+
+fun XFlush{l:agz}(dpy: !Display_ptr(l)): void = "mac#%"
 
 (* End of [Xlib.sats] *)

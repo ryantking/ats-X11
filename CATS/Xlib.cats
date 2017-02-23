@@ -186,6 +186,8 @@
 #define atscntrb_X11_XUndefineCursor            XUndefineCursor
 #define atscntrb_X11_XSetWindowBorder           XSetWindowBorder
 
+#define atscntrb_X11_XFlush XFlush
+
 /* ****** ****** */
 
 #endif
