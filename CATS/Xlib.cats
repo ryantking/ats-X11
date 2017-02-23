@@ -89,6 +89,7 @@
 #define atscntrb_X11_XQLength                   XQLength
 #define atscntrb_X11_XRootWindow                XRootWindow
 #define atscntrb_X11_XDisplayPlanes             XDisplayPlanes
+#define atscntrb_X11_XMaxRequestSize            XMaxRequestSize
 #define atscntrb_X11_XDisplayCells              XDisplayCells
 #define atscntrb_X11_XScreenCount               XScreenCount
 #define atscntrb_X11_XServerVendor              XServerVendor
